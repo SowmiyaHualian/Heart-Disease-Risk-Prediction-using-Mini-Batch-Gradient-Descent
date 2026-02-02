@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Heart Disease Risk Prediction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>Heart Disease Risk Prediction</h1>
+    <p class="subtitle">Enter patient health details to predict risk</p>
+
+    <form id="predictForm">
+      <div class="grid">
+        <input type="number" placeholder="Age" id="age" required>
+        <input type="number" placeholder="Sex (0=F, 1=M)" id="sex" required>
+        <input type="number" placeholder="Chest Pain Type (0–3)" id="cp" required>
+        <input type="number" placeholder="Blood Pressure" id="trestbps" required>
+        <input type="number" placeholder="Cholesterol" id="chol" required>
+        <input type="number" placeholder="Fasting Blood Sugar (0/1)" id="fbs" required>
+        <input type="number" placeholder="Rest ECG (0–2)" id="restecg" required>
+        <input type="number" placeholder="Max Heart Rate" id="thalach" required>
+        <input type="number" placeholder="Exercise Angina (0/1)" id="exang" required>
+        <input type="number" step="0.1" placeholder="Oldpeak" id="oldpeak" required>
+        <input type="number" placeholder="Slope (0–2)" id="slope" required>
+        <input type="number" placeholder="Major Vessels (0–3)" id="ca" required>
+        <input type="number" placeholder="Thal (1–3)" id="thal" required>
+      </div>
+
+      <button type="submit">Predict Risk</button>
+    </form>
+
+    <div id="result" class="result hidden"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
